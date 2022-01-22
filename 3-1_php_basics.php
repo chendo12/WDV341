@@ -12,10 +12,14 @@
 		$number1 = "5";
 		$number2 = "10";
 		$total	= $number1+$number2;
+	
+	//php array (part of exercise 6 )
+		$coding = array("PHP", "HTML", "Javascript");
 	?>
 </head>
 
 <body>
+		
 	<?php
 		//Display the assignment name in an h1 element on the page. Include the elements in your output. 
 		echo "<h1>3-1 Assignment PHP Basics</h1>";
@@ -29,6 +33,23 @@
 				<li>$number2</li>
 				<li>$total</li>
 			  </ul>";
+	
+		//Create a PHP variable that is an array containing the values 'PHP', 'HTML' and 'Javascript'. 
+		//Then, use a PHP loop to iterate through the array and create a javascript array that contains those values. Lastly, 
+		//write a javascript script that displays the values of the array on the page.
+            $javascript = json_encode($coding);
+            echo "<script>
+                    let jsarray = $javascript;
+                    for(let i = 0; i < jsarray.length; i++){
+                        if(i < jsarray.length - 1){
+                            document.write(jsarray[i] + ', ');
+                        } else {
+                            document.write(jsarray[i] + '.');
+                        }
+                    }
+                </script>";
+		
 	?>
+	
 </body>
 </html>
