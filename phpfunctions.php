@@ -52,8 +52,6 @@
 			}
 	
 			echo $number;
-   
-  
 			}
 	
 		//Create a function that will accept a number and display it as US currency with a dollar sign.  Use 123456 for your testing.
@@ -75,9 +73,9 @@
 		
 		<li><?php echo stringinput('Hello and Welcome to the "DmAcC" world of PHP!');?></li>
 		
-		<li><?php echo formattednumber(1234567890);?></li>
+		<li><?php echo formattednumber('1234567890');?></li>
 		
-		<li><?php echo formatMoney('123456 ');?></li>
+		<li><?php echo formatMoney('123456');?></li>
 	</ol>
 	
 	
